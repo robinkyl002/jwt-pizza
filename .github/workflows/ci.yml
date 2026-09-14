@@ -12,12 +12,11 @@ jobs:
     steps:
       - name: create static deployment file
         run: |
-          killa;lkj;ajgl
           mkdir dist
           echo "<h1>Hello GitHub Pages</h1>" >> dist/index.html
 
       - name: Update pages artifact
-        uses: actions/uploadx-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
   deploy:
